@@ -1,20 +1,8 @@
 ﻿using ExemploExplorando.Models;
 
-Pessoa p1 = new Pessoa();
-Pessoa p2 = new Pessoa();
-Pessoa p3 = new Pessoa();
-
-p1.Nome = "Guilherme";
-p1.Sobrenome = "montenegro";
-p1.Idade = 33;
-
-p2.Nome = "andressa";
-p2.Sobrenome = "borges";
-p2.Idade = 28;
-
-p3.Nome = "Liz";
-p3.Sobrenome = "borges monTenegro";
-p3.Idade = 18;
+Pessoa p1 = new Pessoa("Guilherme", "montenegro");
+Pessoa p2 = new Pessoa("andressa", "borges");
+Pessoa p3 = new Pessoa("Liz", "borges Montenegro", 17);
 
 Curso c = new Curso();
 c.Nome = "Inglês";
