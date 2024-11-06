@@ -12,3 +12,4 @@
 /home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.pdb
 /home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.genruntimeconfig.cache
 /home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ref/ExemploExplorando.dll
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.sourcelink.json
