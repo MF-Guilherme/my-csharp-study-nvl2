@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Threading.Tasks;
 
 namespace ExemploExplorando.Models
@@ -25,5 +26,15 @@ namespace ExemploExplorando.Models
         {
             return Alunos.Remove(aluno);
         }
+
+        public void ListarAlunos()
+        {
+            System.Console.WriteLine($"Lista de alunos do curso de {Nome}:");
+            foreach (Pessoa aluno in Alunos)
+            {
+                System.Console.WriteLine(aluno.NomeCompleto);
+            }
+        }
+
     }
 }
