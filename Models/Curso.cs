@@ -30,10 +30,12 @@ namespace ExemploExplorando.Models
         public void ListarAlunos()
         {
             System.Console.WriteLine($"Lista de alunos do curso de {Nome}:");
+            System.Console.WriteLine();
             foreach (Pessoa aluno in Alunos)
             {
-                System.Console.WriteLine(aluno.NomeCompleto);
+                System.Console.WriteLine($"- {aluno.NomeCompleto}");
             }
+            System.Console.WriteLine();
         }
 
     }

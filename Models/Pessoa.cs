@@ -14,12 +14,15 @@ namespace ExemploExplorando.Models
 
         public Pessoa(string nome, string sobrenome)
         {
-
+            Nome = nome;
+            Sobrenome = sobrenome;
         }
 
         public Pessoa(string nome, string sobrenome, int idade)
         {
-            
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Idade = idade;
         }
         private string _nome;
         private int _idade;
