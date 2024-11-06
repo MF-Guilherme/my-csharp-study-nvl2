@@ -1,0 +1,14 @@
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.GeneratedMSBuildEditorConfig.editorconfig
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.AssemblyInfoInputs.cache
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.AssemblyInfo.cs
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.csproj.CoreCompileInputs.cache
+/home/guilherme/Projetos/CSharp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando
+/home/guilherme/Projetos/CSharp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando.deps.json
+/home/guilherme/Projetos/CSharp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando.runtimeconfig.json
+/home/guilherme/Projetos/CSharp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando.dll
+/home/guilherme/Projetos/CSharp/ExemploExplorando/bin/Debug/net8.0/ExemploExplorando.pdb
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.dll
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/refint/ExemploExplorando.dll
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.pdb
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.genruntimeconfig.cache
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ref/ExemploExplorando.dll
