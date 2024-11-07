@@ -7,22 +7,37 @@ using ExemploExplorando.Models;
 
 
 
-LeituraArquivo arquivo = new LeituraArquivo();
+Pessoa p1 = new Pessoa("Guilherme", "Montenegro");
 
-var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");//caso não queira usar um dos dados retornados, posso descartar utilozando o  "_" underline
+(string nome, string sobrenome) = p1;
 
-if (sucesso)
-{
-    // System.Console.WriteLine("Quantidade de linhas: " + quantidadeLinhas);
-    foreach (string linha in linhasArquivo)
-    {
-        System.Console.WriteLine(linha);
-    }
-}
-else
-{
-    System.Console.WriteLine("Não foi possível ler o arquivo");
-}
+System.Console.WriteLine($"{nome} {sobrenome}");
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");//caso não queira usar um dos dados retornados, posso descartar utilozando o  "_" underline
+
+// if (sucesso)
+// {
+//     // System.Console.WriteLine("Quantidade de linhas: " + quantidadeLinhas);
+//     foreach (string linha in linhasArquivo)
+//     {
+//         System.Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     System.Console.WriteLine("Não foi possível ler o arquivo");
+// }
 
 
 
