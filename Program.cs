@@ -2,12 +2,11 @@
 using ExemploExplorando.Models;
 
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 double valorMonetario = 122657.84;
 
-System.Console.WriteLine($"{valorMonetario}");
-System.Console.WriteLine($"{valorMonetario:C}");
+System.Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
 
 
 
