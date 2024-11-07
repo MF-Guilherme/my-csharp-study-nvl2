@@ -1,29 +1,59 @@
 ﻿using System.Globalization;
+using System.Runtime.CompilerServices;
 using System.Runtime.ConstrainedExecution;
+using System.Runtime.InteropServices;
 using System.Xml;
 using ExemploExplorando.Models;
 
 
 
-Stack<int> pilha = new Stack<int>();
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
+estados.Add("SP", "São Paulo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais");
 
-foreach(int item in pilha)
+foreach (var item in estados)
 {
+    System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+}
+
+foreach (var item in estados.Keys) // pegando todas as chaves do dicionario (.Values para pegar os valores) 
+{   
     System.Console.WriteLine(item);
 }
 
-System.Console.WriteLine($"Removendo o elemento {pilha.Pop()} do topo da pilha");
+estados.Remove("BA"); // removendo
+
+estados["SP"] = "Valor alterado"; // alterando o valor
+
+System.Console.WriteLine(estados["SP"]); // pegando o valor de uma chave específica
+
+Console.WriteLine(estados.ContainsKey("BA")); // verifica se a chave já existe no dicionário
 
 
-foreach(int item in pilha)
-{
-    System.Console.WriteLine(item);
-}
+
+
+
+// Stack<int> pilha = new Stack<int>();
+
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
+
+// foreach(int item in pilha)
+// {
+//     System.Console.WriteLine(item);
+// }
+
+// System.Console.WriteLine($"Removendo o elemento {pilha.Pop()} do topo da pilha");
+
+
+// foreach(int item in pilha)
+// {
+//     System.Console.WriteLine(item);
+// }
 
 
 
