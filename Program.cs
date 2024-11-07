@@ -1,14 +1,28 @@
 ﻿using System.Globalization;
 using System.Runtime.ConstrainedExecution;
+using System.Xml;
 using ExemploExplorando.Models;
 
 
-DateTime data = DateTime.Now;
+string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
-System.Console.WriteLine(data);
-System.Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm")); //data formatada da forma que eu quero
-System.Console.WriteLine(data.ToShortDateString()); //somente a data
-System.Console.WriteLine(data.ToShortTimeString()); //somente a hora
+foreach(string linha in linhas)
+{
+    System.Console.WriteLine(linha);
+}
+
+
+
+
+
+
+
+// DateTime data = DateTime.Now;
+
+// System.Console.WriteLine(data);
+// System.Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm")); //data formatada da forma que eu quero
+// System.Console.WriteLine(data.ToShortDateString()); //somente a data
+// System.Console.WriteLine(data.ToShortTimeString()); //somente a hora
 
 
 
