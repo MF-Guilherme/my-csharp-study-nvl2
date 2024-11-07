@@ -6,12 +6,32 @@ using System.Xml;
 using ExemploExplorando.Models;
 
 
+int numero = 78184;
+bool ehPar = false;
 
-Pessoa p1 = new Pessoa("Guilherme", "Montenegro");
+ehPar = numero % 2 == 0;
+System.Console.WriteLine($"O número {numero} é " + (ehPar? "par":"ímpar")); // sempre que tiver if e else posso usar.
 
-(string nome, string sobrenome) = p1;
+// if (numero % 2 == 0)
+// {
+//     System.Console.WriteLine($"O número {numero} é par");
+// }
+// else
+// {
+//     System.Console.WriteLine($"O número {numero} é ímpar");
+// }
 
-System.Console.WriteLine($"{nome} {sobrenome}");
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa("Guilherme", "Montenegro");
+
+// (string nome, string sobrenome) = p1;
+
+// System.Console.WriteLine($"{nome} {sobrenome}");
 
 
 
