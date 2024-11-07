@@ -1,6 +1,8 @@
-﻿using ExemploExplorando.Models;
+﻿using System.Globalization;
+using ExemploExplorando.Models;
 
 
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
 double valorMonetario = 122657.84;
 
