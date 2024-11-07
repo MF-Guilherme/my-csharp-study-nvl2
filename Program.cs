@@ -9,11 +9,11 @@ using ExemploExplorando.Models;
 
 LeituraArquivo arquivo = new LeituraArquivo();
 
-var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");//caso não queira usar um dos dados retornados, posso descartar utilozando o  "_" underline
 
 if (sucesso)
 {
-    System.Console.WriteLine("Quantidade de linhas: " + quantidadeLinhas);
+    // System.Console.WriteLine("Quantidade de linhas: " + quantidadeLinhas);
     foreach (string linha in linhasArquivo)
     {
         System.Console.WriteLine(linha);
