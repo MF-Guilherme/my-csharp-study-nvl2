@@ -3,12 +3,15 @@ using System.Runtime.ConstrainedExecution;
 using System.Xml;
 using ExemploExplorando.Models;
 
+try {    
+    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
 
-string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
-
-foreach(string linha in linhas)
-{
-    System.Console.WriteLine(linha);
+    foreach(string linha in linhas){
+        System.Console.WriteLine(linha);
+    }
+} catch (Exception ex) {
+    
+    System.Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");;
 }
 
 
