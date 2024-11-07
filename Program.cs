@@ -3,24 +3,42 @@ using System.Runtime.ConstrainedExecution;
 using System.Xml;
 using ExemploExplorando.Models;
 
-try {    
-    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
-    foreach(string linha in linhas){
-        System.Console.WriteLine(linha);
-    }
-} catch (FileNotFoundException ex) {
+new ExemploExcecao().Metodo1();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// try {    
+//     string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+//     foreach(string linha in linhas){
+//         System.Console.WriteLine(linha);
+//     }
+// } catch (FileNotFoundException ex) {
     
-    System.Console.WriteLine($"Arquivo não encontrado. {ex.Message}");;
-} catch (DirectoryNotFoundException ex) {
+//     System.Console.WriteLine($"Arquivo não encontrado. {ex.Message}");;
+// } catch (DirectoryNotFoundException ex) {
     
-    System.Console.WriteLine($"Diretório não encontrado. {ex.Message}");;
-} catch (Exception ex) {
+//     System.Console.WriteLine($"Diretório não encontrado. {ex.Message}");;
+// } catch (Exception ex) {
     
-    System.Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");;
-} finally {
-    System.Console.WriteLine("Cheguei aqui com ou sem erro");
-}
+//     System.Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");;
+// } finally {
+//     System.Console.WriteLine("Cheguei aqui com ou sem erro");
+// }
 
 
 
