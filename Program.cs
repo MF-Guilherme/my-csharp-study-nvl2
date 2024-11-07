@@ -3,16 +3,38 @@ using System.Runtime.ConstrainedExecution;
 using ExemploExplorando.Models;
 
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+DateTime data = DateTime.Now;
 
-double valorMonetario = 122657.84;
-System.Console.WriteLine(valorMonetario.ToString("F4"));
+System.Console.WriteLine(data);
+System.Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
 
-double porcentagem = .3524;
-System.Console.WriteLine(porcentagem.ToString("P"));
 
-long numero = 11122233388;
-System.Console.WriteLine(numero.ToString("###-###-###-##"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+
+// double valorMonetario = 122657.84;
+// System.Console.WriteLine(valorMonetario.ToString("F4"));
+
+// double porcentagem = .3524;
+// System.Console.WriteLine(porcentagem.ToString("P"));
+
+// long numero = 11122233388;
+// System.Console.WriteLine(numero.ToString("###-###-###-##"));
 
 
 
