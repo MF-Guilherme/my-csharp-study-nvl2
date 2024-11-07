@@ -4,25 +4,63 @@ using System.Xml;
 using ExemploExplorando.Models;
 
 
-Queue<int> fila = new Queue<int>();
 
-fila.Enqueue(2);
-fila.Enqueue(4);
-fila.Enqueue(6);
-fila.Enqueue(8);
+Stack<int> pilha = new Stack<int>();
 
-foreach (int item in fila)
+pilha.Push(4);
+pilha.Push(6);
+pilha.Push(8);
+pilha.Push(10);
+
+foreach(int item in pilha)
 {
-    Console.WriteLine(item);
+    System.Console.WriteLine(item);
 }
 
-System.Console.WriteLine($"Removendo o elemento {fila.Dequeue()} da fila");
-fila.Enqueue(12);
+System.Console.WriteLine($"Removendo o elemento {pilha.Pop()} do topo da pilha");
 
-foreach (int item in fila)
+
+foreach(int item in pilha)
 {
-    Console.WriteLine(item);
+    System.Console.WriteLine(item);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+// System.Console.WriteLine($"Removendo o elemento {fila.Dequeue()} da fila");
+// fila.Enqueue(12);
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
