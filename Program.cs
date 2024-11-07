@@ -6,7 +6,7 @@ CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
 
 double valorMonetario = 122657.84;
 
-System.Console.WriteLine(valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+System.Console.WriteLine(valorMonetario.ToString("F4"));
 
 
 
