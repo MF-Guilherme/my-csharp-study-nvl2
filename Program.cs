@@ -4,11 +4,17 @@ using System.Xml;
 using ExemploExplorando.Models;
 
 try {    
-    string[] linhas = File.ReadAllLines("Arquivos/arquivo_Leitura.txt");
+    string[] linhas = File.ReadAllLines("Arquivos/abc/arquivo_Leitura.txt");
 
     foreach(string linha in linhas){
         System.Console.WriteLine(linha);
     }
+} catch (FileNotFoundException ex) {
+    
+    System.Console.WriteLine($"Arquivo não encontrado. {ex.Message}");;
+} catch (DirectoryNotFoundException ex) {
+    
+    System.Console.WriteLine($"Diretório não encontrado. {ex.Message}");;
 } catch (Exception ex) {
     
     System.Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");;
