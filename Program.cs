@@ -4,7 +4,7 @@ using System.Xml;
 using ExemploExplorando.Models;
 
 try {    
-    string[] linhas = File.ReadAllLines("Arquivos/abc/arquivo_Leitura.txt");
+    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
     foreach(string linha in linhas){
         System.Console.WriteLine(linha);
@@ -18,8 +18,9 @@ try {
 } catch (Exception ex) {
     
     System.Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");;
+} finally {
+    System.Console.WriteLine("Cheguei aqui com ou sem erro");
 }
-
 
 
 
