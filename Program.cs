@@ -7,29 +7,55 @@ using ExemploExplorando.Models;
 
 
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+(int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Guilherme", "Montenegro", 1.69M); // forma mais indicada
 
-estados.Add("SP", "São Paulo");
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
+ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Guilherme", "Montenegro", 1.69M); // outra forma de criar uma tupla
+var outroExemploTuplaCreate = Tuple.Create(1, "Guilherme", "Montenegro", 1.69M);// outra forma de criar uma tupla
 
-foreach (var item in estados)
-{
-    System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
 
-foreach (var item in estados.Keys) // pegando todas as chaves do dicionario (.Values para pegar os valores) 
-{   
-    System.Console.WriteLine(item);
-}
+System.Console.WriteLine($"Id = {tupla.Item1}");
+System.Console.WriteLine($"Nome = {tupla.Item2}");
+System.Console.WriteLine($"Sobrenome = {tupla.Item3}");
+System.Console.WriteLine($"Altura = {tupla.Item4}");
 
-estados.Remove("BA"); // removendo
 
-estados["SP"] = "Valor alterado"; // alterando o valor
 
-System.Console.WriteLine(estados["SP"]); // pegando o valor de uma chave específica
 
-Console.WriteLine(estados.ContainsKey("BA")); // verifica se a chave já existe no dicionário
+
+
+
+
+
+
+
+
+
+
+
+
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+
+// estados.Add("SP", "São Paulo");
+// estados.Add("BA", "Bahia");
+// estados.Add("MG", "Minas Gerais");
+
+// foreach (var item in estados)
+// {
+//     System.Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+
+// foreach (var item in estados.Keys) // pegando todas as chaves do dicionario (.Values para pegar os valores) 
+// {   
+//     System.Console.WriteLine(item);
+// }
+
+// estados.Remove("BA"); // removendo
+
+// estados["SP"] = "Valor alterado"; // alterando o valor
+
+// System.Console.WriteLine(estados["SP"]); // pegando o valor de uma chave específica
+
+// Console.WriteLine(estados.ContainsKey("BA")); // verifica se a chave já existe no dicionário
 
 
 
