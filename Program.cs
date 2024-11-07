@@ -6,7 +6,9 @@ using ExemploExplorando.Models;
 DateTime data = DateTime.Now;
 
 System.Console.WriteLine(data);
-System.Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+System.Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm")); //data formatada da forma que eu quero
+System.Console.WriteLine(data.ToShortDateString()); //somente a data
+System.Console.WriteLine(data.ToShortTimeString()); //somente a hora
 
 
 
