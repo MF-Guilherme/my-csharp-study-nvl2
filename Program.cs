@@ -2,15 +2,39 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
-using System.Xml;
 using ExemploExplorando.Models;
+using Newtonsoft.Json;
 
 
-int numero = 78184;
-bool ehPar = false;
+Venda v1 = new Venda(1, "Caneta", 1.25M);
 
-ehPar = numero % 2 == 0;
-System.Console.WriteLine($"O número {numero} é " + (ehPar? "par":"ímpar")); // sempre que tiver if e else posso usar.
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+
+System.Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int numero = 78184;
+// bool ehPar = false;
+
+// ehPar = numero % 2 == 0;
+// System.Console.WriteLine($"O número {numero} é " + (ehPar? "par":"ímpar")); // sempre que tiver if e else posso usar.
 
 // if (numero % 2 == 0)
 // {

@@ -13,3 +13,6 @@
 /home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.genruntimeconfig.cache
 /home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ref/ExemploExplorando.dll
 /home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.sourcelink.json
+/home/guilherme/Projetos/CSharp/ExemploExplorando/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.csproj.AssemblyReference.cache
+/home/guilherme/Projetos/CSharp/ExemploExplorando/obj/Debug/net8.0/ExemploExplorando.csproj.CopyComplete
