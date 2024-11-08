@@ -8,9 +8,15 @@ using Newtonsoft.Json;
 
 Venda v1 = new Venda(1, "Caneta", 1.25M);
 
-string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
 
-System.Console.WriteLine(serializado);
+string venda1Serializada = JsonConvert.SerializeObject(v1, Formatting.Indented);
+
+System.Console.WriteLine(venda1Serializada);
+
+File.WriteAllText("Arquivos/vendas.json", venda1Serializada);
+
+
+
 
 
 
