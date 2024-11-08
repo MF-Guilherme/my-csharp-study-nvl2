@@ -7,9 +7,10 @@ using Newtonsoft.Json;
 
 List<Venda> listaVendas = new List<Venda>();
 
+DateTime dataAtual = DateTime.Now;
 
-Venda v1 = new Venda(1, "Caneta", 1.25M);
-Venda v2 = new Venda(2, "Caderno", 15.74M);
+Venda v1 = new Venda(1, "Caneta", 1.25M, dataAtual);
+Venda v2 = new Venda(2, "Caderno", 15.74M, dataAtual);
 
 listaVendas.Add(v1);
 listaVendas.Add(v2);
