@@ -1,13 +1,13 @@
 [
   {
     "Id": 1,
-    "Produto": "Caneta",
+    "Nome_Produto": "Caneta",
     "Preco": 1.25,
     "DataVenda": "2024-11-08T14:14:43.6562123-03:00"
   },
   {
     "Id": 2,
-    "Produto": "Caderno",
+    "Nome_Produto": "Caderno",
     "Preco": 15.74,
     "DataVenda": "2024-11-08T14:14:43.6562123-03:00"
   }
