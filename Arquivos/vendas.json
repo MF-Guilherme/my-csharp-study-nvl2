@@ -1,5 +1,12 @@
-{
-  "Id": 1,
-  "Produto": "Caneta",
-  "Preco": 1.25
-}
+[
+  {
+    "Id": 1,
+    "Produto": "Caneta",
+    "Preco": 1.25
+  },
+  {
+    "Id": 2,
+    "Produto": "Caderno",
+    "Preco": 15.74
+  }
+]

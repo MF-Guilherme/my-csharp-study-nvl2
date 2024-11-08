@@ -5,15 +5,21 @@ using System.Runtime.InteropServices;
 using ExemploExplorando.Models;
 using Newtonsoft.Json;
 
+List<Venda> listaVendas = new List<Venda>();
+
 
 Venda v1 = new Venda(1, "Caneta", 1.25M);
+Venda v2 = new Venda(2, "Caderno", 15.74M);
+
+listaVendas.Add(v1);
+listaVendas.Add(v2);
 
 
-string venda1Serializada = JsonConvert.SerializeObject(v1, Formatting.Indented);
+string listaSerializados = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
 
-System.Console.WriteLine(venda1Serializada);
+System.Console.WriteLine(listaSerializados);
 
-File.WriteAllText("Arquivos/vendas.json", venda1Serializada);
+File.WriteAllText("Arquivos/vendas.json", listaSerializados);
 
 
 
